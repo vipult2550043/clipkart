@@ -89,7 +89,7 @@ const PlacedOrderDetailScreen = ({ match }) => {
                                             <strong>Method: </strong>
                                             {order.paymentMethod}
                                         </p>
-                                        {order.isPaid ? <Message variant='success'><h6>Paid on {order.paidAt}</h6></Message> : <Message variant='danger'><h6>Not Paid</h6></Message>}
+                                        {order.isPaid ? <Message variant='success'><h6>Paid on {order.paidAt.slice(0,11)}</h6></Message> : <Message variant='danger'><h6>Not Paid</h6></Message>}
                                     </ListGroup.Item>
 
                                     <ListGroup.Item>
