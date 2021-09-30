@@ -1,0 +1,137 @@
+main {
+  min-height: 80vh;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.changePassword:hover {
+  color: #1a0101;
+  cursor: pointer;
+  text-decoration: underline;
+  font: bold;
+}
+
+#mainScreenCard {
+  width: 17.2rem;
+  height: 25rem;
+  border: 2px solid rgba(249, 249, 249, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  transition-duration: 300ms;
+  box-shadow: rgb(0 0 0 / 40%) 0px 26px 30px -0px,
+    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+}
+
+#mainScreenCard:hover {
+  transform: scale(1.05);
+  border-color: rgba(249, 249, 249, 0.8);
+  box-shadow: rgb(0 0 0 / 60%) 0px 40px 58px -16px,
+    rgb(0 0 0 / 73%) 0px 30px 22px -10px;
+}
+
+#productDetailScreen {
+  width: 29rem;
+  height: 26rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  transform: scale(1.05);
+  border-color: rgba(249, 249, 249, 0.8);
+  box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
+    rgb(0 0 0 / 73%) 0px 30px 22px -10px;
+}
+
+.userOrderDetail {
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  transition-duration: 450ms;
+  box-shadow: rgb(0 0 0 / 40%) 0px 26px 30px -0px,
+    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+}
+
+.userOrderDetail:hover {
+  transform: scale(1.05);
+  box-shadow: rgb(0 0 0 / 50%) 0px 40px 58px -16px,
+    rgb(0 0 0 / 70%) 0px 30px 22px -10px;
+}
+
+#adminOrdersDetailImg {
+  width: 8rem;
+  height: 6rem;
+  margin-left: 1rem;
+  object-fit: fill;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  transition-duration: 450ms;
+  box-shadow: rgb(0 0 0 / 15%) 0px 26px 30px -0px,
+    rgb(0 0 0 / 20%) 0px 16px 10px -11px;
+}
+
+#cartImg{
+    width: 9rem;
+  height: 7rem;
+  object-fit: fill;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  transition-duration: 450ms;
+  box-shadow: rgb(0 0 0 / 5%) 0px 26px 30px -0px,
+    rgb(0 0 0 / 10%) 0px 16px 10px -11px;
+}
+
+.placedOrderImg{
+    width: 3rem;
+  height: 2rem;
+  object-fit: fill;
+  overflow: hidden;
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  transition-duration: 450ms;
+  box-shadow: rgb(0 0 0 / 5%) 0px 26px 30px -0px,
+    rgb(0 0 0 / 10%) 0px 16px 10px -11px;
+
+}
+
+/*Carosel*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active{
+display: flex;
+}
+
+.carousel-caption{
+  position:absolute;
+  top:0;
+}
+
+.carousel-caption h2{
+  color:#fff;
+}
+
+.carousel img{
+  height:300px;
+  padding: 30px;
+  border-radius: 50%;
+  margin: 40px;
+}
+.carousel a{
+  margin: 0 auto;
+}
