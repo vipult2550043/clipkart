@@ -10,6 +10,7 @@ import { RESET_CART_ITEM_AFTER_ORDER } from '../types/types';
 import SearchBox from './SearchBox';
 
 
+
 const Header = () => {
     const userSelector = useSelector(state => state.userLogin);
     const { userInfo } = userSelector;

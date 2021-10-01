@@ -56,7 +56,9 @@ const ProductScreen = ({ match, history }) => { //Destructing from props we get 
                 <Row>
 
                     <Col md={6}>
-                        <Image id='productDetailScreen' src={product.image} alt={product.name} fluid ></Image>
+                     
+                            <Image id='productDetailScreen' src={product.image} alt={product.name} fluid ></Image>
+                        
                     </Col>
                     <Col md={3}>
                         <ListGroup variant='flush'>

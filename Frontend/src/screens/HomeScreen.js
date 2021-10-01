@@ -29,23 +29,29 @@ const HomeScreen = ({ match }) => {
 
     return (
         <>
-            {!keyword ? <ProductCarosel></ProductCarosel> : <Link to='/' className='btn btn-dark' style={{marginBottom:'3rem'}}>Go Back</Link>}
-            
+            {!keyword ? <ProductCarosel></ProductCarosel> : <Link to='/' className='btn btn-dark' style={{ marginBottom: '3rem' }}>Go Back</Link>}
+
             {loading ? <Loader /> : productList && products.length !== 0 ? (
 
                 <>
+
                     <h1>Latest Products</h1>
                     {error ? <h2>{error.message}</h2> : <Row>
 
                         {products.map((item) => {
                             return <Col key={item._id} sm={12} md={4} xl={3}>
+
                                 <Products product={item}></Products>
                             </Col>
                         })}
                     </Row>}
+
+
+
                 </>
 
-            ) : <Message variant='danger'>No Product Available</Message>}
+            ) : <Message variant='danger'>No Product Available</Message>
+            }
 
 
 
